@@ -7,16 +7,16 @@
 }
 .blockTyping {
     width: 600px;
-    height: 300px;
+    height: 220px;
     display: flex;
     background-color: #e0e0e0;
     border-radius: 4px;
 }
 .numberList {
-    line-height: 28px;
+    line-height: 20px;
     top:0;
     left: 0;
-    height: 280px;
+    height: 200px;
     width: 35px;
     text-align: right;
     padding: 10px 6px;
@@ -25,7 +25,7 @@
     border-radius: 5px ;
 }
 .inputWrapper {
-    margin-top: 60px;
+    margin-top: 20px;
     padding: 0;
 }
 .inputWrapper textarea {
@@ -53,7 +53,7 @@
     color: #fff;
     cursor: pointer;
     margin-left: 423px;
-    margin-top:100px ;
+    margin-top:50px ;
 }
 .display{
     top: 0;
@@ -104,7 +104,6 @@
     100% {
         transform: scale(1)
     }
-
 }
 .greenKrug {
     background-image: url('https://flexboxfroggy.com/images/lilypad-green.svg');
