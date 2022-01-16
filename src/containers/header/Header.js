@@ -13,12 +13,10 @@ import LevelContext from '../../store/LevelContext'
 import Level from '../../components/levels/Level'
 import LevelTwo from '../../components/levels/LevelTwo'
 import { useState } from 'react'
-import LevelThree from '../../components/levels/LevelThree'
 
 function Header() {
     const [modalIndecator, setmodalIndecator] = useState(false)
     const [isLoggedIn, setisLoggedIn] = useState(false)
-    const [threeLevel, setThreeLevel] = useState(false)
     const levelHandler = () => {
         setisLoggedIn(true)
     }
@@ -31,12 +29,6 @@ function Header() {
     const hideModal = () => {
         setmodalIndecator(false)
     }
-    const levelThreeHandler = () => {
-        setThreeLevel(true)
-    }
-    const hideLevelThree = () => {
-        setisLoggedIn(false)
-    }
         return (
         <>
         <LevelContext.Provider value={{
@@ -44,8 +36,6 @@ function Header() {
             levelHandler: levelHandler,
             modalIndecator: modalIndecator,
             logoutHandler: logoutHandler, 
-            // levelThreeHandler: levelThreeHandler,     
-            // hideLevelThree: hideLevelThree
         }}>
             <header className={classes.header}>
                 <Navigation>
@@ -64,7 +54,6 @@ function Header() {
                     <MainBlock className={classes.MainBlock}>
                         {!isLoggedIn && <Level/>}
                         {isLoggedIn && <LevelTwo/>}
-                        {/* {threeLevel && <LevelThree/>} */}
                     </MainBlock>
             </header>
             </LevelContext.Provider>
