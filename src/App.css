@@ -1,0 +1,9 @@
+body {
+  display: flex;
+  margin: 0;
+  height: 550px;
+  width: 100%;
+  background-color: #43A047;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'PT Sans', sans-serif;
+}
