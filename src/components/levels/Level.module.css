@@ -85,7 +85,7 @@
     display: flex;
     justify-content: space-between;
     top: 0;
-    width: 650px;
+    width: 550px;
     height: 640px;
     border-radius:10px;
     background-color: #1F5768
@@ -125,13 +125,13 @@
     width: 130px;
     height: 130px;
     border-radius: 55px;
-    margin-left: 550px;
+    margin-left: 450px;
 }
 .frogGreen.bump {
     position: fixed;
     z-index: 81;
     width: 80px;
     height: 80px;
-    margin-left: 560px;
+    margin-left: 460px;
     margin-top: 12px;
 }
