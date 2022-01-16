@@ -45,7 +45,7 @@ function Header() {
                                 <img className={classes.Left} src={iconLeft} alt="/"/>
                             </Button>
                             {modalIndecator &&  <LevelModal/> }
-                                <Indecator onClick={showModal}>уровень 2 из 16</Indecator>
+                                <Indecator onClick={showModal} className={classes.levelIndecator}>уровень 2 из 16</Indecator>
                             <Button className={classes.arrow } onClick={levelHandler} >
                                 <img className={classes.right} src={conRight} alt="/"/>
                             </Button>

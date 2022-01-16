@@ -1,9 +1,9 @@
 import React from 'react'
-import classes from './Indecator.module.css'
+
 
 function Indecator(props) {
     return (
-        <div onClick={props.onClick} className={classes.levelIndecator}>
+        <div onClick={props.onClick} className={props.className}>
             {props.children}
         </div>
     )
