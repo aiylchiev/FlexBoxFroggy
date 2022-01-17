@@ -5,6 +5,8 @@ import { levelOneValue } from '../../constants/constants'
 import Numbers from '../UI/Numbers'
 import { useContext } from 'react'
 import LevelContext from '../../store/LevelContext'
+import 'animate.css';
+
 
 function Level() {
     const context = useContext(LevelContext)
@@ -16,7 +18,7 @@ function Level() {
         setformIsValid(event.target.value === levelOneValue)
         setNextLevel(event.target.value === levelOneValue)
     }
-    const nextClasses = `${classes.nextButton} ${nextLevel ? classes.nextAnimation : ''}`
+    const nextClasses = `${classes.nextButton} ${nextLevel ? 'animate__animated animate__tada' : ''}`
     const btnClasses = `${classes.frogGreen} ${formIsValid ? classes.bump : ''}`
     return (
         <div className={classes.Level}>

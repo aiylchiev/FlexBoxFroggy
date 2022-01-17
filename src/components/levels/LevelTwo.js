@@ -15,7 +15,7 @@ function LevelTwo() {
         setFormInvalid(event.target.value === levelTwoValue)
         setNextLevel(event.target.value === levelTwoValue)
     }
-    const nextClasses = `${classes.nextButton} ${nextLevel ? classes.nextAnimation : ''}`
+    const nextClasses = `${classes.nextButton} ${nextLevel ? 'animate__animated animate__tada' : ''}`
     const greenClasses = `${classes.frogGreen} ${formInvalid ? classes.bump : ''}`
     const yellowClasses = `${classes.frogYeelow} ${formInvalid ? classes.bumpYeelow : ''}`
     return (
