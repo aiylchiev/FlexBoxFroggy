@@ -5,6 +5,7 @@ import { levelTwoValue } from '../../constants/constants'
 import Numbers from '../UI/Numbers'
 import { useContext } from 'react'
 import LevelContext from '../../store/LevelContext'
+import 'animate.css';
 function LevelTwo() {
     const context = useContext(LevelContext)
     const [levelInput, setLevelInput] = useState('')
